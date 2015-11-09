@@ -1,0 +1,13 @@
+diff --git a/bio/aboutme.txt b/bio/aboutme.txt
+index 4e98bff..2d57ab2 100644
+--- a/bio/aboutme.txt
++++ b/bio/aboutme.txt
+@@ -1 +1,5 @@
+-Random personal details.
+\ No newline at end of file
++Random personal details.
++
++Some MORE random personal details.
++
++yet more personal details.
+\ No newline at end of file

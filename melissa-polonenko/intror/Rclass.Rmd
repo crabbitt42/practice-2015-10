@@ -1,0 +1,63 @@
+---
+title: "Code as Manuscript"
+author: "Melissa Polonenko"
+date: "Monday, November 02, 2015"
+output: html_document
+---
+# Matrices
+```{r}
+list() #can have any time of character
+matrix() #creates a matrix
+
+x <- 1:10
+dim(x) <- c(2,5) # 
+ #OR
+y <- matrix(1:10, nrow=2,ncol=5)
+
+#use column-binding or row-binding with functions cbind() and rbind()
+z <- 1:3
+w <- 10:12
+cbind(z,w) #z will be column 1 and w will be in column 2
+rbind(z,w) #z will be row 1 and w will be row2
+
+```
+
+# Factors
+```{r}
+#like an integer vector where each integer has a label (and more descriptive)
+#treated specially by modelling functions like lm() and glm()
+
+answer <- factor(c("yes","yes","no","no","yes"))
+table(answer)
+unclass(answer)
+
+
+num <- c(1,1,2,2,3)
+num.factor <- factor(x=num,levels = c(1,2,3), labels = c("yes","no","maybe"), ordered = TRUE)
+
+
+```
+
+# Dataframe
+```{r}
+#store tabular data; like matrices (rows and columns) that can store different classes of objects in each column
+# depending on the source of the data, dataframes can be made using the read.table(), read.csv(), or created using data.fram()
+
+df1 <- data.frame(var1 = 1:4, var2 = c(T,T,F,F))
+
+```
+
+# Attributes
+```{r}
+# names, lengths, classes, dimensions, metadata (user defined attributes)
+# dataframes have a special attribute called row.names
+# can be modified with the attributes() function, among others
+# e.g. modify the names of a vector to make code more readable
+
+v1 <- 1:3
+names(v1) # don't see names
+names(v1) <- c("alpha","beta","gamma")
+str(v1) #look at the structure of an object (note: not a factor) - just giving a name for that value
+
+```
+

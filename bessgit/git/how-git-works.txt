@@ -1,0 +1,22 @@
+GitHub is a repository, either within a single machine or in a centralized location, to which files can be periodically saved. 
+
+The flow of work from active file to History (Repository) consists of the active file, the Stage, to which files must be added, or indexed, using the command "git add filename". 
+
+To permanently save a version to History, use the command "git commit". 
+
+Tag -m "Message" is used to record a message about a version. For example, this one will be: -m "Shit about GitHub that I remember 1".
+
+When I make changes, it will be: -m "Shit about GitHub that I remember 2"
+
+
+***
+
+Adding further information.
+
+This will be titled "Shit about GitHub that I remember 2"
+
+** 
+
+
+
+Git and version control are extraordinarily important, because they offer an alternative to having endless version files breeding like rabbits in one's directories.
